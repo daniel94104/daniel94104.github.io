@@ -73,10 +73,16 @@ body{
 	margin-right: 5%;
 }
 .table{
-	margin-left: 18%;
-}
-.goal{
 	margin-left: 10%;
+}
+.jobGoal{
+	margin-left: 10%;
+}
+.bottomspace{
+	margin-bottom: 20px;
+}
+.subtitle{
+	margin-top: 20px;
 }
 hr {
     display: block;
@@ -89,15 +95,12 @@ hr {
     border-width: 1px;
 }
 
-Inherited from section#projects-sect.content
-index.scss:107
-
 #school{
 	background-color: #f5ffff;
 }
 #skills{
 	margin-top: 5%;
-	margin-left: 28%;
+	margin-left: 25%;
 	margin-bottom: 5%;
 	font-size: 20px;
 }
