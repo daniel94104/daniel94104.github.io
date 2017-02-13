@@ -124,10 +124,23 @@
 								var map = new google.maps.Map(document.getElementById('map'),{
 											zoom: 13,
 											center: myHome});
+								var infoWindow = '<div id = "contactinfo">' + '<h1>Qiao</h1>'+'<table>'
+												+'<tr>'+'<td>Address:</td>'+ '<td colspan = 3>228 Albert Street, PH02, Waterloo,ON</td>'+ '</tr>'
+											+ '<tr>' + '<td>Phone:</td>' + '<td colspan = 3>519-729-9288</td>'+ '</tr>'
+											+ '<tr>' + '<td>Email:</td>' + '<td colspan =3>danielqiaoge@gmail.com</td>'+'</tr>'
+											+ '</table>'+ '</div>';
+
+								var inforwindow = new google.maps.InfoWindow({
+          content: infoWindow
+        });
 								var marker = new google.maps.Marker({
           position: myHome,
           map: map
         });
+        marker.addListener('click', function() {
+          inforwindow.open(map, marker);
+        });
+        inforwindow.open(map, marker);
 							}
 						</script>
 						<script async defer
