@@ -120,9 +120,19 @@
 					<div id="map">
 						<script>
 							function initMap(){
-
+								var myHome = {lat:43.474263,lng:-80.531870};
+								var map = new google.maps.Map(document.getElementById('map'),{
+											zoom: 13,
+											center: myHome});
+								var marker = new google.maps.Marker({
+          position: myHome,
+          map: map
+        });
 							}
 						</script>
+						<script async defer
+    				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0onPOMIICL_-ugwNvCbY215H1EkyCrYY&callback=initMap">
+    		</script>
 					</div>
 			</div>
 		</div>

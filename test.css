@@ -94,7 +94,11 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
-
+#map{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 400px;
+}
 #school{
 	background-color: #f5ffff;
 }
